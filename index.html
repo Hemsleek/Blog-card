@@ -10,8 +10,71 @@
 </head>
 
 <body>
+    <main class="main">
+        <div class="image-wrapper">
+            <div class="image">
+                <span class="content">11 <span>JAN</span></span>
+            </div>
+        </div>
 
-    <script></script>
+        <div class="post">
+            <span class="title">How to Snatch Someone's Wife and still do yanga</span>
+
+            <div class="name-comment">
+
+                <div class="name">
+                    <img src="./media/edit-box.svg" alt="edit-icon">
+                    <span class="text">
+                        Asiyanbi Mubashir
+                    </span>
+                </div>
+                <div class="comment">
+                    <img src="./media/comment.svg" alt="comment-icon">
+                    <span class="text">200</span>
+                </div>
+            </div>
+
+
+            <div class="post-body">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sapiente error fugiat libero recusandae impedit maiores ut deleniti consequatur ullam, voluptatem dolorum. Alias doloremque quo natus consequuntur itaque nisi libero!
+            </div>
+
+            <div class="read-more">
+                <span class="direction">
+                    <img src="./media/arrow-right.svg" alt="arrow-right">
+                </span>
+                <span class="read-more">Read More</span>
+            </div>
+        </div>
+    </main>
+    <script>
+        $(document).ready(function() {
+            $(".post").hover(function() {
+                    $(".image-wrapper").addClass("active")
+                },
+                function() {
+                    $(".image-wrapper").removeClass("active")
+                }
+            )
+            $(".read-more").hover(function() {
+                $(".direction").addClass("changed");
+                $(this).css({
+                        "color": "white",
+                        "background": "#F2B739"
+                    },
+                    function() {
+                        $(".direction").removeClass("changed");
+                        // $(this).css({
+                        //     "color": "black",
+                        //     "background": "white"
+                        // })
+                    }
+                )
+            })
+
+
+        })
+    </script>
 </body>
 
 </html>
