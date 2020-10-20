@@ -43,7 +43,7 @@
                 <span class="direction">
                     <img src="./media/arrow-right.svg" alt="arrow-right">
                 </span>
-                <span class="read-more">Read More</span>
+                <span class="more-text">Read More</span>
             </div>
         </div>
     </main>
@@ -58,17 +58,20 @@
             )
             $(".read-more").hover(function() {
                 $(".direction").addClass("changed");
-                $(this).css({
+                $(".more-text").css({
                         "color": "white",
                         "background": "#F2B739"
                     },
                     function() {
-                        $(".direction").removeClass("changed");
-                        // $(this).css({
-                        //     "color": "black",
-                        //     "background": "white"
-                        // })
+
+                        $(".direction").removeClass("changed")
+                        $(".more-text").css({
+
+                            "color": "black",
+                            "background": "white"
+                        })
                     }
+
                 )
             })
 
