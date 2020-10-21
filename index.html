@@ -56,25 +56,15 @@
                     $(".image-wrapper").removeClass("active")
                 }
             )
-            $(".read-more").hover(function() {
-                $(".direction").addClass("changed");
-                $(".more-text").css({
-                        "color": "white",
-                        "background": "#F2B739"
-                    },
-                    function() {
 
-                        $(".direction").removeClass("changed")
-                        $(".more-text").css({
+            $('.more-text').hover(function(){
+                $('.direction').addClass('border-right-active')
+            },
+            function(){
+                $('.direction').removeClass('border-right-active')
 
-                            "color": "black",
-                            "background": "white"
-                        })
-                    }
-
-                )
             })
-
+        
 
         })
     </script>
